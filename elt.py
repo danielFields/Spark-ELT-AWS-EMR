@@ -14,7 +14,6 @@ config.read('dl.cfg')
 os.environ['AWS_ACCESS_KEY_ID']=config['AWS_ACCESS_KEY_ID']
 os.environ['AWS_SECRET_ACCESS_KEY']=config['AWS_SECRET_ACCESS_KEY']
 
-
 def create_spark_session():
     """
     Decorator function to create a spakr session. Returns the session variable.
