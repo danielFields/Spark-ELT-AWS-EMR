@@ -7,7 +7,7 @@ aws emr create-cluster \
 --use-default-roles \
 --release-label emr-5.28.0 \
 --instance-count 3 \
---applications Name=Spark  \
+--applications Name=Spark Name=Hive  \
 --ec2-attributes KeyName=putty-1,SubnetId=subnet-086f716ac1da230fb,EmrManagedMasterSecurityGroup=sg-0465cf83ad1d1d93e,EmrManagedSlaveSecurityGroup=sg-02e120b3b87b8a5f3 \
 --instance-type m5.xlarge \
 --profile default \
